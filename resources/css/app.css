@@ -1,0 +1,24 @@
+/* ./resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.link {
+    @apply text-blue-500 font-bold no-underline;
+}
+
+a:hover.link {
+    @apply text-blue-400 underline;
+}
+
+.fixed-image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.fixed-image {
+    @apply absolute inset-0 w-full h-full;
+}
