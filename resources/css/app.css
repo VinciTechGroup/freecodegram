@@ -22,3 +22,12 @@ a:hover.link {
 .fixed-image {
     @apply absolute inset-0 w-full h-full;
 }
+
+.btn {
+    @apply px-5 py-3 rounded-md uppercase tracking-widest;
+}
+
+.btn-primary {
+    @apply bg-blue-500 hover:bg-blue-400 text-white;
+}
+

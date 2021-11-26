@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="sticky top-0 bg-white shadow-md">
+        <nav class="sticky top-0 bg-white shadow-md py-3">
             <div class="px-6 w-full max-w-screen-2xl mx-auto flex justify-between items-center">
                 <a class="flex items-center" href="{{ url('/') }}">
                     <img src="/images/free-code-gram-logo.svg" class="w-auto h-5 pr-3 border-r border-gray-200"/>
@@ -54,7 +54,7 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="flex gap-8">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->username }}
                                 </a>
